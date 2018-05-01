@@ -7,12 +7,29 @@
 					}
 					</script>
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800" rel="stylesheet">
 		<style>
 			body {
 				padding: 0;
 				margin: 0;
 				font-family: "Open Sans";
 				overflow: hidden;
+			}
+			.grad {
+				position: fixed;
+				z-index: -1;
+				width: 100%;
+				height: 100%;
+			background: linear-gradient(to bottom right, 
+				#336699, 
+				#339966,
+				#996633,
+				#993366,
+				#336699);
+			background-size: 400% 400%;
+			-webkit-animation: Gradient 20s ease infinite;
+			-moz-animation: Gradient 20s ease infinite;
+			animation: Gradient 20s ease infinite;
 			}
 			@-webkit-keyframes Gradient {
 				0% {
@@ -53,16 +70,7 @@
 			width: 100%;
 			height: 100%;
 			margin: 0;
-			background: linear-gradient(to bottom right, 
-				#336699, 
-				#339966,
-				#996633,
-				#993366,
-				#336699);
-			background-size: 400% 400%;
-			-webkit-animation: Gradient 20s ease infinite;
-			-moz-animation: Gradient 20s ease infinite;
-			animation: Gradient 20s ease infinite;
+			background: none;
 		}
 		.intro {
 			margin: auto;
@@ -72,13 +80,10 @@
 			font-size: 500%;
 		}
 		.about {
-			margin: auto;
-			text-align: justify;
-			
-			width: 100%;
+			text-align: center;
 			height: 100%;
-			margin: auto;
-			max-width: 600px;
+			width: 100%;
+			display: block;
 		}
 		i {
 			font-size: 75%;
@@ -95,7 +100,7 @@
 
 		a {
 			text-decoration: none;
-			color: blue;
+			color: lightblue;
 		}
 
 		a:hover {
@@ -104,6 +109,7 @@
 
 		h1 {
 			text-align: center;
+			color: white;
 		}
 		
 		h1 > i:hover {
@@ -116,9 +122,21 @@
 			height: 3px;
 			border: none;
 		}
+
+		.box {
+			float: left;
+			width: calc(50% - 90px);
+			color: #ffffff;
+			margin: 20px;
+			padding: 20px;
+			height: 50%;
+			border: 5px solid white;
+			overflow: auto;
+		}
 		</style>
 	</head>
 	<body>
+		<div class="grad"></div>
 		<div class="title">
 			<div class="intro">
 				I am <b>Benjamin Park</b><br>
@@ -137,31 +155,35 @@
 			</div>
 		</div>
 		<div class="about">
+			<div class="shrink" style="max-width: 1000px; margin:auto;">
 				<h1 onclick="scrollWin(0, -999999)" style="padding: 25px;">
 					<i class="fas fa-arrow-up" style="font-size: 100%;"></i>
 				</h1><br>
-				<hr>
-			<h1>About Me</h1>
-			<p>
-				&nbsp;&nbsp;&nbsp;&nbsp;I am a computer science / linguistics student at the University of Florida
-			</p>
-			<p>
-				&nbsp;&nbsp;&nbsp;&nbsp;I like to program, and, all things considered, I do it quite well. 
-				I am experienced mainly in Java and C++, but nonetheless I have skills in most popular languages.
-			</p>
-			<p>
-				&nbsp;&nbsp;&nbsp;&nbsp;I'm not very good at web-programming, which is why this website probably appears very simple.
-			</p>
-			<hr>
-			<h1>Ruota</h1>
-			<p>
-				&nbsp;&nbsp;&nbsp;&nbsp;Ruota is an interpreted programming language that I've been working on. For more information, please follow the link below:
-			</p>
-			<p>&nbsp;&nbsp;&nbsp;&nbsp;
-			<a href="https://github.com/Agilulfulus/Ruota">
-				https://github.com/Agilulfulus/Ruota
-			</a>
-			</p>
+				<div class="box">
+						<h1>About Me</h1>
+						<p>
+							I am a computer science / linguistics student at the University of Florida
+						</p>
+						<p>
+							I like to program, and, all things considered, I do it quite well. 
+							I am experienced mainly in Java and C++, but nonetheless I have skills in most popular languages.
+						</p>
+						<p>
+							I'm not very good at web-programming, which is why this website probably appears very simple.
+						</p>
+				</div>
+			<div class="box">
+				<h1>Ruota</h1>
+				<p>
+					Ruota is an interpreted programming language that I've been working on. For more information, please follow the link below:
+				</p>
+				<p>
+					<a href="https://github.com/Agilulfulus/Ruota">
+						https://github.com/Agilulfulus/Ruota
+					</a>
+				</p>
+			</div>
+			</div>
 		</div>
 	</body>
 </html>
