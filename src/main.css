@@ -23,8 +23,13 @@ body {
 }
 
 table {
-    font-size: 16rem;
     overflow: auto;
+}
+
+table,
+tr,
+td {
+    font-size: 16rem;
 }
 
 h1 {
