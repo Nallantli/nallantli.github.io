@@ -1,224 +1,89 @@
+<!DOCTYPE html>
 <html>
 
 <head>
-	<title>Benjamin Park Profile</title>
-	<script>
-		function scrollWin(x, y) {
-			window.scroll({ top: y, left: x, behavior: 'smooth' });
-		}
-	</script>
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg"
-	 crossorigin="anonymous">
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800" rel="stylesheet">
-	<style>
-		body {
-			padding: 0;
-			margin: 0;
-			font-family: "Open Sans";
-			/*overflow: hidden;*/
-		}
-
-		.grad {
-			position: fixed;
-			z-index: -1;
-			width: 100%;
-			height: 100%;
-			background: linear-gradient(to bottom right,
-				#336699,
-				#339966,
-				#996633,
-				#993366,
-				#336699);
-			background-size: 400% 400%;
-			-webkit-animation: Gradient 20s ease infinite;
-			-moz-animation: Gradient 20s ease infinite;
-			animation: Gradient 20s ease infinite;
-		}
-
-		@-webkit-keyframes Gradient {
-			0% {
-				background-position: 0% 50%
-			}
-
-			50% {
-				background-position: 100% 50%
-			}
-
-			100% {
-				background-position: 0% 50%
-			}
-		}
-
-		@-moz-keyframes Gradient {
-			0% {
-				background-position: 0% 50%
-			}
-
-			50% {
-				background-position: 100% 50%
-			}
-
-			100% {
-				background-position: 0% 50%
-			}
-		}
-
-		@keyframes Gradient {
-			0% {
-				background-position: 0% 50%
-			}
-
-			50% {
-				background-position: 100% 50%
-			}
-
-			100% {
-				background-position: 0% 50%
-			}
-		}
-
-		.title {
-			width: 100%;
-			height: 100%;
-			margin: 0;
-			background: none;
-		}
-
-		.intro {
-			margin: 0;
-			text-align: center;
-			color: white;
-			padding: 0;
-			font-size: 64px;
-		}
-
-		.about {
-			text-align: center;
-			padding: 20px;
-			padding-bottom: 50px;
-			display: block;
-			background-color: #113366;
-		}
-
-		i {
-			font-size: 75%;
-		}
-
-		.icon {
-			color: #ffffff;
-			margin: 0;
-			padding: 0;
-			display: inline-block;
-		}
-
-		.icon:hover {
-			color: #ffdddd;
-		}
-
-		a {
-			text-decoration: none;
-			color: lightblue;
-		}
-
-		a:hover {
-			text-decoration: underline;
-		}
-
-		h1 {
-			text-align: center;
-			color: white;
-		}
-
-		h1>i:hover {
-			color: gray;
-		}
-
-		hr {
-			background: #ddd;
-			margin: 15px;
-			height: 3px;
-			border: none;
-		}
-
-		.box {
-			max-width: 500px;
-			color: #ffffff;
-			margin: auto;
-			margin-top: 40px !important;
-			font-size: 14px;
-			padding: 20px;
-			border: 2px solid white;
-			overflow: auto;
-		}
-	</style>
+	<link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/gnu-unifont" type="text/css" />
+	<link rel="stylesheet" href="src/main.css">
+	<title>Caput Siti</title>
 </head>
 
 <body>
-	<div class="grad"></div>
-	<div class="title">
-		<div class="intro">
-			<div style="margin: auto; display: inline-block; top: 0; right: 0; left: 0; bottom: 0; position: absolute; height: 200px">
-				<b>Benjamin Park</b>'s Homepage<br>
-				<a class="icon" href="#about">
-					<i class="fas fa-align-left"></i>
-				</a>
-				<a class="icon" href="https://github.com/Agilulfulus">
-					<i class="fab fa-github"></i>
-				</a>
-				<a class="icon" href="https://www.facebook.com/benjamin.robert.park">
-					<i class="fab fa-facebook"></i>
-				</a>
-				<a class="icon" href="mailto:parkbenjamin2@gmail.com">
-					<i class="fas fa-at"></i>
-				</a>
-			</div>
+	<div id="coa">
+		<div id="nav">
+			<h2>NAVIGATION</h2>
+			<table>
+				<tr>
+					<td><b>Home Page</b></td>
+					<td><a href="./index.html">./index</a></td>
+				</tr>
+				<tr>
+					<td>Curriculum Vitae</td>
+					<td><a href="./c_vitae.html">./c_vitae</a></td>
+				</tr>
+			</table>
 		</div>
+		<img src="src/blazon.png">
 	</div>
-	<div id="about" class="about">
-		<div class="shrink" style="max-width: 1000px; margin:auto;">
-			<h1 onclick="scrollWin(0, -999999)" style="padding: 25px;">
-				<i class="fas fa-arrow-up" style="font-size: 100%;"></i>
-			</h1><br>
-			<div class="box">
-				<h1>About Me</h1>
-				<img src="me.png" width=100px style="border: 2px solid white;">
-				<p>
-					I am a linguistics major at the University of Florida
-				</p>
-				<p>
-					I like to program and I do it quite well.
-					I am experienced mainly in Java and C++, but nonetheless I have skills in most popular languages.
-				</p>
-				<p>
-					I'm not very good at web-programming, which is why this website probably appears very simple.
-				</p>
-			</div>
-			<div class="box">
-				<h1>JSyntaxTree</h1>
-				<img src="OUTPUT.png" width=300px style="filter: invert(100%);">
-				<p>
-					Inspired by various other syntax tree programs, this one notably includes more text effects and expressive
-					movement.
-				</p>
-				<p>
-					<a href="https://github.com/Agilulfulus/JSyntaxTree">
-						https://github.com/Agilulfulus/JSyntaxTree
-					</a>
-				</p>
-			</div>
-			<div class="box">
-				<h1>Ruota</h1>
-				<p>
-					Ruota is an interpreted programming language that I've been working on. For more information, please follow the
-					link below:
-				</p>
-				<p>
-					<a href="https://github.com/Agilulfulus/Ruota">
-						https://github.com/Agilulfulus/Ruota
-					</a>
-				</p>
-			</div>
-		</div>
+	<div id="intro">
+		<h1>NALLANTLI</h1>
+		<p>
+			Welcome to my personal profile page. There's not all that much to see around here, but you are welcome to
+			take a look around.
+			You'll find here a nice brief overview of my work and interests, and perhaps something interesting to carry
+			back home.
+		</p>
+		<p>
+			I am a Linguistics Major at the University of Florida, and will be graduating at the end of this year
+			(2020).
+			Despite majoring in Linguistics, I have a long and fortunate history with programming and Computer Science,
+			which
+			I continue to act in as a hobby along with my linguistics studies. In certain cases, the worlds do collide,
+			but
+			for the most part unless something calls for computational linguistics specifically they remain separate.
+		</p>
+	</div>
+	<div id="name">
+		<h1>NAME</h1>
+		<p>
+			My real name is Benjamin R. Park, but on the internet I have taken up the username <b>Nallantli</b> [<span
+				class="IPA">ˈnaːl.lãːn.tɬi</span>] (or, Anglicized
+			as [<span class="IPA">nəˈlãnt.li</span>], or [<span class="IPA">nəˈlãn.(t)ʃi</span>]), a calque of the
+			Nahuatl
+			postpositions <b>nâl + tlân</b>, meaning "to the other side" and "from; at" respectively, plus the
+			additional <b>tli</b>
+			nominalizer so that my name is indeed a regular noun. The meaning roughly translates to "(he/it) is from the
+			other side (of something)."
+			I like to consider this pseudonym to be a reflection of my two contrasting interests, the social aspects of
+			learning and studying languages
+			and the analytics of Linguistics and Computer Science. Additionally, I just think it sounds cool.
+		</p>
+		<p>
+			Many people who have spoken to me for an extended period of time on the internet (approximately two years ago I made the switch) 
+			refer to me as <b>Aggy</b>, an abbreviation of my former username <b>Agilulfulus</b>, taken as a dimunitive form of Italo Calvino's 
+			eponymous character Agilulf from the novel <b>The Nonexistent Knight</b>.
+		</p>
+	</div>
+	<div id="contact">
+		<h1>CONTACT</h1>
+		<table>
+			<tr>
+				<td>Github</td>
+				<td><a href="https://github.com/Nallantli">github.com/Nallantli</a></td>
+			</tr>
+			<tr>
+				<td>Facebook</td>
+				<td><a href="https://www.facebook.com/benjamin.robert.park">www.facebook.com/benjamin.robert.park</a>
+				</td>
+			</tr>
+			<tr>
+				<td>Email</td>
+				<td><a href="mailto:parkbenjamin2@gmail.com">parkbenjamin2@gmail.com</a></td>
+			</tr>
+			<tr>
+				<td>Discord</td>
+				<td><a href="https://discordapp.com">Nallantli#3785</a></td>
+			</tr>
+		</table>
 	</div>
 </body>
 

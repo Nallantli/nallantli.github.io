@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Curriculum Vitae</title>
+	<link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/gnu-unifont" type="text/css" />
+	<link rel="stylesheet" href="src/main.css">
+	<script>
+		function openTab(tabID, classSEC) {
+			var i;
+			var x = document.getElementsByClassName(classSEC);
+			for (i = 0; i < x.length; i++) {
+				if (!x[i].classList.contains('collapsed'))
+					x[i].classList.add('collapsed');
+				if (x[i].classList.contains(tabID)) {
+					if (x[i].classList.contains('collapsed'))
+						x[i].classList.remove('collapsed');
+				}
+			}
+		}
+	</script>
+</head>
+
+<body>
+	<div id="coa">
+		<div id="nav">
+			<h2>NAVIGATION</h2>
+			<table>
+				<tr>
+					<td>Home Page</td>
+					<td><a href="./index.html">./index</a></td>
+				</tr>
+				<tr>
+					<td><b>Curriculum Vitae</b></td>
+					<td><a href="./c_vitae.html">./c_vitae</a></td>
+				</tr>
+			</table>
+		</div>
+		<img src="src/blazon.png">
+	</div>
+	<div id="dir">
+		<a href="#goals">+ GOALS・OBIETTIVI・目的</a><br>
+		<a href="#edu">+ EDUCATION・ISTRUZIONE・教育</a><br>
+		<a href="#exp">+ EXPERIENCE・ESPERIENZA・体験</a><br>
+		<a href="#proj">+ PROJECTS・PROGETTI・事業</a><br>
+		<a href="#lang">+ LANGUAGES・LINGUE・言語</a>
+	</div>
+	<div>
+		<a name="goals"></a>
+		<h1>GOALS・OBIETTIVI・目的</h1>
+		<div class="buttons">
+			<button class="tab-button" onclick="openTab('en', 'goals')">EN</button>
+			<button class="tab-button" onclick="openTab('it', 'goals')">IT</button>
+			<button class="tab-button" onclick="openTab('jp', 'goals')">和</button>
+		</div>
+		<div class="section en goals">
+			<p>
+				It is my long term goal to eventually become a tenured professor of Linguistics. In the more immediate,
+				I
+				am seeking to get TEFL certification so that I may go abroad for a gap year between my undergraduate and
+				graduate schooling. After which, I will continue my Linguistics education and pursue a PhD.
+			</p>
+			<p>
+				During these periods it is imperative that I make a living wage to sustain myself, and for that I offer
+				my skills and
+				experience in the field of programming, which I believe will give me the necessary qualifications to
+				obtain a job in an Information Technology field.
+			</p>
+		</div>
+		<div class="section it goals collapsed">
+			<p>
+				Il mio obiettivo al lungo termine è diventare un professore dello studio Linguistico con permanenza
+				in carica infine. Nel tempo più dell'immediato, sto cercando per raggiungere una certificazione TEFL
+				cosicché vada all'estero con uno anno tra i miei studi laureati e dottorali.
+			</p>
+			<p>
+				Durante questi periodi sarà imperativo che possa fare una paga sostenibile, e per quello offro le mie
+				abilità e esperienza nel campo di programmare, che credo potere donarmi le qualificazioni necessarie
+				d'ottenere un lavoro nel campo di Tecnologia Informazione.
+			</p>
+		</div>
+		<div class="section jp goals collapsed">
+			<p>
+				結局の目的はテニュアがある言語学博士になっていることだ。将来では、大学生の勉強から大学院生の勉強までの間に一年間で
+				海外に行くために、英語の習う認証をもらうのを探している。その後、言語学の勉強を続いて博士号を追い求める予定だ。
+			</p>
+			<p>
+				この時間の中で、
+				良く生け続けられる持続可能な賃金をくれるのは大変大切だので、私のプログラミングの腕前と体験をあげられる。それらは
+				情報技術についての仕事を働くために必要な条件を良くくれたと信じる。
+			</p>
+		</div>
+	</div>
+	<div>
+		<a name="edu"></a>
+		<h1>EDUCATION・ISTRUZIONE・教育</h1>
+		<div class="buttons">
+			<button class="tab-button" onclick="openTab('en', 'edu')">EN</button>
+			<button class="tab-button" onclick="openTab('it', 'edu')">IT</button>
+			<button class="tab-button" onclick="openTab('jp', 'edu')">和</button>
+		</div>
+		<div class="section en edu">
+			<p>
+				I am a graduate of the International Baccalaureate Programme from my high school Palm Harbor University High School.
+				My Extended Essay was on Mathematics and concerned the evaluation of Monte Carlo Integration.
+			</p>
+			<p>
+				I am currently an undergraduate student at the University of Florida and will be graduating this year (2020) with a Bachelors
+				of Arts in Linguistics.
+			</p>
+		</div>
+		<div class="section it edu collapsed">
+			<p>
+				Sono graduato dalla Programma del Baccellierato Internazionale tra il mio liceo Liceo-Università di Palm Harbor.
+				Il topico del mio Tesi era su Matematica e riguardato l'evaluazione dell'Integrazione Monte Carlo.
+			</p>
+			<p>
+				Attualmente sono un studente laureato all'Università di Florida e starò graduando quest'anno (2020) con un Baccellierato in Arti
+				a Linguistica.
+			</p>
+		</div>
+		<div class="section jp edu collapsed">
+			<p>
+				私のパーム・ハーバー高校大学の高校での国際バカロレアのプログラムから卒業していた。課題論文の話題は数学について書いて
+				モンテカルロ積分の生成をもとにして書いていた。
+			</p>
+			<p>
+				今はフロリダ大学の学部学生で言語学の学士と今年（2020）の終わりに卒業している。
+			</p>
+		</div>
+	</div>
+	<div>
+		<a name="exp"></a>
+		<h1>EXPERIENCE・ESPERIENZA・体験</h1>
+		<div class="buttons">
+			<button class="tab-button" onclick="openTab('en', 'exp')">EN</button>
+			<button class="tab-button" onclick="openTab('it', 'exp')">IT</button>
+			<button class="tab-button" onclick="openTab('jp', 'exp')">和</button>
+		</div>
+		<div class="section en exp">
+			<p>
+				High School (2012-2016)
+			<ul>
+				<li>
+					Worked as a mathematics tutor for the chain Mathnasium (1.5 Years)
+				</li>
+				<li>
+					Vice President and President of the Programming Society (2 Years)
+				</li>
+				<li>
+					Lead Engineer for the robotic's team (2 Years)
+				</li>
+			</ul>
+			University (2016-2020)
+			<ul>
+				<li>
+					Tutor for teaching English within UF's Foreign Language Organization (1 Year)
+				</li>
+				<li>
+					Technology correspondent for 1455 Center for Literary Arts (Ongoing)
+				</li>
+				<li>
+					Tutor of English Literature and Mathematics through Tutor.org (2 Years)
+				</li>
+				<li>
+					Member of the UF Competitive Programming Team (1 Year)
+				</li>
+				<li>
+					Member of the UF AI Programming Club (1 Year)
+				</li>
+				<li>
+					Presenter and Vice President of the UF Undergraduate Linguistics Society (3 Years)
+				</li>
+			</ul>
+			</p>
+		</div>
+		<div class="section it exp collapsed">
+			<p>
+				Liceo (2012-2016)
+			<ul>
+				<li>
+					Lavorando come un istutore di matematica colla corporazione Mathnasium (1.5 Anni)
+				</li>
+				<li>
+					Vicepresidente e Presidente della Società di Programmazione (2 Anni)
+				</li>
+				<li>
+					Primo Ingegnere per la Squadra di Robotica (2 Anni)
+				</li>
+			</ul>
+			Università (2016-2020)
+			<ul>
+				<li>
+					Istutore per l'insegnando dell'inglese tra l'Organizatione di Lingue Straniere a UF (1 Anno)
+				</li>
+				<li>
+					Corrispondente Tecnologico per il Centro 1455 dell'Arte Literaria (Attuale)
+				</li>
+				<li>
+					Istutore della Lituratura Inglese e Matematiche tra Tutor.org (2 Anni)
+				</li>
+				<li>
+					Membro della Squadra Competitiva di Programmatori a UF (1 Anno)
+				</li>
+				<li>
+					Membro del Club di Programmazione d'IA a UF (1 Anno)
+				</li>
+				<li>
+					Relatore e Vicepresidente della Società Linguistica Laureata a UF (3 Anni)
+				</li>
+			</ul>
+			</p>
+		</div>
+		<div class="section jp exp collapsed">
+			<p>
+				高校（2012～2016）
+			<ul>
+				<li>
+					マスネズィアム会社での数学のチューターとして働いた（1.5年間）
+				</li>
+				<li>
+					プログラミングの協会での副大統領と大統領（2年間）
+				</li>
+				<li>
+					ロボット工学のチームでの先頭エンジニア（2年間）
+				</li>
+			</ul>
+			大学（2016～2020）
+			<ul>
+				<li>
+					フロリダ大学外国語協会での英語のチューター（1年間）
+				</li>
+				<li>
+					1455文学美術協会でのテクノロジー業者（進行中）
+				</li>
+				<li>
+					Tutor.orgでの英語文学と数学のチューター（2年間）
+				</li>
+				<li>
+					フロリダ大学競プログラミングのチームでのメンバー（1年間）
+				</li>
+				<li>
+					フロリダ大学人工知能プログラミングクラブでのメンバー（1年間）
+				</li>
+				<li>
+					フロリダ大学言語学学部生協会での講演者と副大統領（3年間）
+				</li>
+			</ul>
+			</p>
+		</div>
+	</div>
+	<div>
+		<a name="proj"></a>
+		<h1>PROJECTS・PROGETTI・事業</h1>
+		<div class="buttons">
+			<button class="tab-button" onclick="openTab('en', 'proj')">EN</button>
+			<button class="tab-button" onclick="openTab('it', 'proj')">IT</button>
+			<button class="tab-button" onclick="openTab('jp', 'proj')">和</button>
+		</div>
+		<div class="section en proj">
+			<p>
+			<table>
+				<tr>
+					<td>
+						<a href="https://github.com/Ruota-Lang/Ruota">Ruota</a>
+					</td>
+					<td>
+						High-Level Interpreted Programming Language
+					</td>
+					<td>
+						C++
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<a href="https://github.com/Nallantli/TerrainGenerator">Terrain Generator</a>
+					</td>
+					<td>
+						Terrain Generator Using Simplex Noise
+					</td>
+					<td>
+						JS
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<a href="https://github.com/Nallantli/NallanChatCLI">NallanChat</a>
+					</td>
+					<td>
+						Command-Line-Based Chat Client
+					</td>
+					<td>
+						NodeJS
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<a href="https://github.com/Nallantli/NallanChatServer">NallanChat Server</a>
+					</td>
+					<td>
+						Server for NallanChat
+					</td>
+					<td>
+						NodeJS
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<a href="https://github.com/Nallantli/NodeSimulation">Node Simulation</a>
+					</td>
+					<td>
+						A* Search Through Randomly Generated Nodes
+					</td>
+					<td>
+						Java
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<a href="https://github.com/Nallantli/JSyntaxTree">JSyntaxTree</a>
+					</td>
+					<td>
+						Syntax Tree Builder
+					</td>
+					<td>
+						Java
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<a href="https://github.com/Nallantli/Pitch-Accent-Helper">Pitch Accent Helper</a>
+					</td>
+					<td>
+						Demo Exploring Pitch Accent in Japanese
+					</td>
+					<td>
+						JS
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<a href="https://github.com/Nallantli/general-repo/tree/master/cpp/Neural%20Network">Neural
+							Network</a>
+					</td>
+					<td>
+						Simple Neural Network Implementation
+					</td>
+					<td>
+						C++
+					</td>
+				</tr>
+			</table>
+			</p>
+		</div>
+		<div class="section it proj collapsed">
+			<p>
+			<table>
+				<tr>
+					<td>
+						<a href="https://github.com/Ruota-Lang/Ruota">Ruota</a>
+					</td>
+					<td>
+						Linguaggio Interpretado di Programmazione ad Alto Livello
+					</td>
+					<td>
+						C++
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<a href="https://github.com/Nallantli/TerrainGenerator">Generatore Terreno</a>
+					</td>
+					<td>
+						Generazione di Terreno che usa Simplex Noise
+					</td>
+					<td>
+						JS
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<a href="https://github.com/Nallantli/NallanChatCLI">NallanChat</a>
+					</td>
+					<td>
+						Cliente di Comuncazione a Riga di Comando
+					</td>
+					<td>
+						NodeJS
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<a href="https://github.com/Nallantli/NallanChatServer">NallanChat Server</a>
+					</td>
+					<td>
+						Server per NallanChat
+					</td>
+					<td>
+						NodeJS
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<a href="https://github.com/Nallantli/NodeSimulation">Simulazione di Nodi</a>
+					</td>
+					<td>
+						A* Algoritmo con Nodi Generati Fortuitamente
+					</td>
+					<td>
+						Java
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<a href="https://github.com/Nallantli/JSyntaxTree">JSyntaxTree</a>
+					</td>
+					<td>
+						Generatore di Alberi Sintassi
+					</td>
+					<td>
+						Java
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<a href="https://github.com/Nallantli/Pitch-Accent-Helper">Aiutore d'Accento Tonale</a>
+					</td>
+					<td>
+						Demo che Esplora Accento Tonale nel Giapponese
+					</td>
+					<td>
+						JS
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<a href="https://github.com/Nallantli/general-repo/tree/master/cpp/Neural%20Network">Rete
+							Neurale</a>
+					</td>
+					<td>
+						Implementazione Semplice d'una Rete Neurale
+					</td>
+					<td>
+						C++
+					</td>
+				</tr>
+			</table>
+			</p>
+		</div>
+		<div class="section jp proj collapsed">
+			<p>
+			<table>
+				<tr>
+					<td>
+						<a href="https://github.com/Ruota-Lang/Ruota">ルオタ</a>
+					</td>
+					<td>
+						インタプリタ用の高水準言語
+					</td>
+					<td>
+						C++
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<a href="https://github.com/Nallantli/TerrainGenerator">地形の生成器</a>
+					</td>
+					<td>
+						シンプレクス・ノイズを使う地形の生成器
+					</td>
+					<td>
+						JS
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<a href="https://github.com/Nallantli/NallanChatCLI">ナーランチャット</a>
+					</td>
+					<td>
+						通信の端末クライアント
+					</td>
+					<td>
+						NodeJS
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<a href="https://github.com/Nallantli/NallanChatServer">ナーランチャットのサーバー</a>
+					</td>
+					<td>
+						ナーランチャットのためのサーバー
+					</td>
+					<td>
+						NodeJS
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<a href="https://github.com/Nallantli/NodeSimulation">節点の模擬</a>
+					</td>
+					<td>
+						A＊のアルゴリズムを使う無作為な節点の地図
+					</td>
+					<td>
+						Java
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<a href="https://github.com/Nallantli/JSyntaxTree">ジェイシンタックスツリー</a>
+					</td>
+					<td>
+						統語論ツリーの生成器
+					</td>
+					<td>
+						Java
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<a href="https://github.com/Nallantli/Pitch-Accent-Helper">高低アクセントの手伝い</a>
+					</td>
+					<td>
+						日本語の高低アクセントを探るデモ
+					</td>
+					<td>
+						JS
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<a
+							href="https://github.com/Nallantli/general-repo/tree/master/cpp/Neural%20Network">ニューラルネットワーク</a>
+					</td>
+					<td>
+						簡単なニューラルネットワークの実現
+					</td>
+					<td>
+						C++
+					</td>
+				</tr>
+			</table>
+			</p>
+		</div>
+	</div>
+	<div>		
+		<a name="lang"></a>
+		<h1>LANGUAGES・LINGUE・言語</h1>
+		<div class="buttons">
+			<button class="tab-button" onclick="openTab('en', 'lang')">EN</button>
+			<button class="tab-button" onclick="openTab('it', 'lang')">IT</button>
+			<button class="tab-button" onclick="openTab('jp', 'lang')">和</button>
+		</div>
+		<div class="section en lang">
+			<p>
+			<table>
+				<tr>
+					<td>
+						English
+					</td>
+					<td>
+						[<span class="IPA">ˈɪ̃ŋ.glɪʃ</span>]
+					</td>
+					<td>
+						Native
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Italian
+					</td>
+					<td>
+						[<span class="IPA">i.taˈlja.no</span>]
+					</td>
+					<td>
+						Advanced
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Japanese
+					</td>
+					<td>
+						[<span class="IPA">ɲi.hõŋ.go</span>]
+					</td>
+					<td>
+						Advanced
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Spanish
+					</td>
+					<td>
+						[<span class="IPA">es.paˈɲɔl</span>]
+					</td>
+					<td>
+						Conversational, easier to read than to speak
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Latin
+					</td>
+					<td>
+						[<span class="IPA">laˈti.na</span>]
+					</td>
+					<td>
+						Upper Intermediate
+					</td>
+				</tr>
+			</table>
+			</p>
+		</div>
+		<div class="section it lang collapsed">
+			<p>
+				<table>
+					<tr>
+						<td>
+							Inglese
+						</td>
+						<td>
+							[<span class="IPA">ˈɪ̃ŋ.glɪʃ</span>]
+						</td>
+						<td>
+							Nativo
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Italiano
+						</td>
+						<td>
+							[<span class="IPA">i.taˈlja.no</span>]
+						</td>
+						<td>
+							Sofisticato
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Giapponese
+						</td>
+						<td>
+							[<span class="IPA">ɲi.hõŋ.go</span>]
+						</td>
+						<td>
+							Sofisticato
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Spagnolo
+						</td>
+						<td>
+							[<span class="IPA">es.paˈɲɔl</span>]
+						</td>
+						<td>
+							Posso conversare, è più facile di leggerlo che parlarlo
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Latina
+						</td>
+						<td>
+							[<span class="IPA">laˈti.na</span>]
+						</td>
+						<td>
+							Più d'Intermedio
+						</td>
+					</tr>
+				</table>
+				</p>
+		</div>
+		<div class="section jp lang collapsed">
+			<p>
+				<table>
+					<tr>
+						<td>
+							英語
+						</td>
+						<td>
+							[<span class="IPA">ˈɪ̃ŋ.glɪʃ</span>]
+						</td>
+						<td>
+							母語
+						</td>
+					</tr>
+					<tr>
+						<td>
+							イタリア語
+						</td>
+						<td>
+							[<span class="IPA">i.taˈlja.no</span>]
+						</td>
+						<td>
+							上級
+						</td>
+					</tr>
+					<tr>
+						<td>
+							日本語
+						</td>
+						<td>
+							[<span class="IPA">ɲi.hõŋ.go</span>]
+						</td>
+						<td>
+							上級
+						</td>
+					</tr>
+					<tr>
+						<td>
+							スペイン語
+						</td>
+						<td>
+							[<span class="IPA">es.paˈɲɔl</span>]
+						</td>
+						<td>
+							会話力がいいが読むことは話すことより簡単
+						</td>
+					</tr>
+					<tr>
+						<td>
+							ラテン語
+						</td>
+						<td>
+							[<span class="IPA">laˈti.na</span>]
+						</td>
+						<td>
+							中級よりちょっと高い
+						</td>
+					</tr>
+				</table>
+				</p>
+		</div>
+	</div>
+</body>
+
+</html>
