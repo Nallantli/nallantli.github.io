@@ -91,7 +91,7 @@ td {
 }
 
 .jp {
-    line-height: 1.5em;
+    line-height: 24rem;
 }
 
 .section {
@@ -159,7 +159,7 @@ button:hover {
 
 #dir {
     margin-top: 15rem;
-    line-height: 1.5em;
+    line-height: 18rem;
     font-size: 12rem;
 }
 
