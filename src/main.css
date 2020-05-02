@@ -47,7 +47,7 @@ h2 {
 
 @media (orientation: landscape) {
     html {
-        font-size: 0.3mm;
+        font-size: 0.25mm;
     }
     body {
         max-width: 140mm;
@@ -127,11 +127,11 @@ button {
     margin-right: 5rem;
     color: #3f3f3f;
     padding: 0;
-    height: 18rem;
-    width: 18rem;
+    height: 22rem;
+    width: 22rem;
     font-family: MainMono;
-    font-size: 10rem;
-    border-radius: 2rem;
+    font-size: 12rem;
+    border-radius: 4rem;
     font-weight: bold;
 }
 
