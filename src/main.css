@@ -1,11 +1,16 @@
 @font-face {
     font-family: MainMono;
-    src: url(PixelMplus12-Regular.ttf);
+    src: url(HackGenConsole-Regular.ttf);
+}
+
+@font-face {
+    font-family: IPAFont;
+    src: url(fira-sans.regular.ttf);
 }
 
 @font-face {
     font-family: MainMono;
-    src: url(PixelMplus12-Bold.ttf);
+    src: url(HackGenConsole-Bold.ttf);
     font-weight: bold;
 }
 
@@ -71,12 +76,12 @@ h2 {
 }
 
 .IPA {
-    font-family: UnifontMedium;
+    font-family: IPAFont;
     color: #ffffcc;
 }
 
 a {
-    color: #aabbbb;
+    color: #99bbbb;
     text-decoration: none;
 }
 
@@ -95,7 +100,7 @@ td {
     margin-bottom: 10rem;
 }
 
-.jp {
+div.jp {
     line-height: 24rem;
 }
 
@@ -117,13 +122,13 @@ div {
 
 button {
     background: none;
-    border: solid #3f3f3f 1rem;
+    border: solid #3f3f3f 1.5rem;
     margin-left: 5rem;
     margin-right: 5rem;
     color: #3f3f3f;
     padding: 0;
-    height: 16rem;
-    width: 16rem;
+    height: 18rem;
+    width: 18rem;
     font-family: MainMono;
     font-size: 10rem;
     border-radius: 2rem;
@@ -135,9 +140,10 @@ td {
     padding-bottom: 10rem;
 }
 
-button:hover {
-    border: solid #ffffcc 1rem;
-    color: #ffffcc;
+button:hover,
+.selected {
+    border: solid #ff6254 1.5rem;
+    color: #ff6254;
 }
 
 #coa {

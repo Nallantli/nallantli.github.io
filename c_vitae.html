@@ -3,18 +3,26 @@
 
 <head>
     <title>Curriculum Vitae</title>
-    <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/gnu-unifont" type="text/css" />
     <link rel="stylesheet" href="src/main.css">
     <script>
         function openTab(tabID, classSEC) {
             var i;
             var x = document.getElementsByClassName(classSEC);
             for (i = 0; i < x.length; i++) {
-                if (!x[i].classList.contains('collapsed'))
-                    x[i].classList.add('collapsed');
-                if (x[i].classList.contains(tabID)) {
-                    if (x[i].classList.contains('collapsed'))
-                        x[i].classList.remove('collapsed');
+                if (x[i].classList.contains('section')) {
+                    if (!x[i].classList.contains('collapsed'))
+                        x[i].classList.add('collapsed');
+                    if (x[i].classList.contains(tabID)) {
+                        if (x[i].classList.contains('collapsed'))
+                            x[i].classList.remove('collapsed');
+                    }
+                } else if (x[i].classList.contains('tab-button')) {
+                    if (x[i].classList.contains('selected'))
+                        x[i].classList.remove('selected');
+                    if (x[i].classList.contains(tabID)) {
+                        if (!x[i].classList.contains('selected'))
+                            x[i].classList.add('selected');
+                    }
                 }
             }
         }
@@ -49,9 +57,9 @@
         <a name="goals"></a>
         <h1>GOALS・OBIETTIVI・目的</h1>
         <div class="buttons">
-            <button class="tab-button" onclick="openTab('en', 'goals')">EN</button>
-            <button class="tab-button" onclick="openTab('it', 'goals')">IT</button>
-            <button class="tab-button" onclick="openTab('jp', 'goals')">和</button>
+            <button class="tab-button en goals selected" onclick="openTab('en', 'goals')">EN</button>
+            <button class="tab-button it goals" onclick="openTab('it', 'goals')">IT</button>
+            <button class="tab-button jp goals" onclick="openTab('jp', 'goals')">和</button>
         </div>
         <div class="section en goals">
             <p>
@@ -84,9 +92,9 @@
         <a name="edu"></a>
         <h1>EDUCATION・ISTRUZIONE・教育</h1>
         <div class="buttons">
-            <button class="tab-button" onclick="openTab('en', 'edu')">EN</button>
-            <button class="tab-button" onclick="openTab('it', 'edu')">IT</button>
-            <button class="tab-button" onclick="openTab('jp', 'edu')">和</button>
+            <button class="tab-button en edu selected" onclick="openTab('en', 'edu')">EN</button>
+            <button class="tab-button it edu" onclick="openTab('it', 'edu')">IT</button>
+            <button class="tab-button jp edu" onclick="openTab('jp', 'edu')">和</button>
         </div>
         <div class="section en edu">
             <p>
@@ -117,9 +125,9 @@
         <a name="exp"></a>
         <h1>EXPERIENCE・ESPERIENZA・体験</h1>
         <div class="buttons">
-            <button class="tab-button" onclick="openTab('en', 'exp')">EN</button>
-            <button class="tab-button" onclick="openTab('it', 'exp')">IT</button>
-            <button class="tab-button" onclick="openTab('jp', 'exp')">和</button>
+            <button class="tab-button en exp selected" onclick="openTab('en', 'exp')">EN</button>
+            <button class="tab-button it exp" onclick="openTab('it', 'exp')">IT</button>
+            <button class="tab-button jp exp" onclick="openTab('jp', 'exp')">和</button>
         </div>
         <div class="section en exp">
             <p>
@@ -237,9 +245,9 @@
         <a name="proj"></a>
         <h1>PROJECTS・PROGETTI・事業</h1>
         <div class="buttons">
-            <button class="tab-button" onclick="openTab('en', 'proj')">EN</button>
-            <button class="tab-button" onclick="openTab('it', 'proj')">IT</button>
-            <button class="tab-button" onclick="openTab('jp', 'proj')">和</button>
+            <button class="tab-button en proj selected" onclick="openTab('en', 'proj')">EN</button>
+            <button class="tab-button it proj" onclick="openTab('it', 'proj')">IT</button>
+            <button class="tab-button jp proj" onclick="openTab('jp', 'proj')">和</button>
         </div>
         <div class="section en proj">
             <p>
@@ -530,9 +538,9 @@
         <a name="lang"></a>
         <h1>LANGUAGES・LINGUE・言語</h1>
         <div class="buttons">
-            <button class="tab-button" onclick="openTab('en', 'lang')">EN</button>
-            <button class="tab-button" onclick="openTab('it', 'lang')">IT</button>
-            <button class="tab-button" onclick="openTab('jp', 'lang')">和</button>
+            <button class="tab-button en lang selected" onclick="openTab('en', 'lang')">EN</button>
+            <button class="tab-button it lang" onclick="openTab('it', 'lang')">IT</button>
+            <button class="tab-button jp lang" onclick="openTab('jp', 'lang')">和</button>
         </div>
         <div class="section en lang">
             <p>
