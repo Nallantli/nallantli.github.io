@@ -47,10 +47,10 @@ h2 {
 
 @media (orientation: landscape) {
     html {
-        font-size: 1px;
+        font-size: 0.3mm;
     }
     body {
-        max-width: 500px;
+        max-width: 140mm;
     }
     #nav {
         display: none;
@@ -62,7 +62,7 @@ h2 {
 
 @media (orientation: portrait) {
     html {
-        font-size: 2.5px;
+        font-size: 0.6mm;
     }
     body {
         max-width: none;
