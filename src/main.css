@@ -1,15 +1,18 @@
 @font-face {
     font-family: MainMono;
+    font-display: swap;
     src: url(HackGenConsole-Regular.ttf);
 }
 
 @font-face {
     font-family: IPAFont;
+    font-display: swap;
     src: url(fira-sans.regular.ttf);
 }
 
 @font-face {
     font-family: MainMono;
+    font-display: swap;
     src: url(HackGenConsole-Bold.ttf);
     font-weight: bold;
 }
@@ -17,7 +20,7 @@
 html {
     background: #121212;
     color: white;
-    font-family: "MainMono";
+    font-family: "MainMono", monospace;
 }
 
 body {
@@ -84,7 +87,7 @@ h2 {
 }
 
 .IPA {
-    font-family: IPAFont;
+    font-family: IPAFont, monospace;
     color: #ffffcc;
 }
 
