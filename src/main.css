@@ -89,6 +89,7 @@ h2 {
 }
 
 a {
+    outline: none;
     color: #99bbbb;
     text-decoration: none;
     transition: all 0.25s ease-in-out;
@@ -130,6 +131,7 @@ div {
 }
 
 button {
+    outline: none;
     background: none;
     border: solid #3f3f3f 1.5rem;
     margin-left: 5rem;
@@ -141,8 +143,12 @@ button {
     font-family: MainMono;
     font-size: 12rem;
     border-radius: 4rem;
-    font-weight: bold;
+    font-weight: 500;
     transition: all 0.25s ease-in-out;
+}
+
+button::-moz-focus-inner {
+    border: 0;
 }
 
 li,
