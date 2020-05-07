@@ -53,10 +53,14 @@ h2 {
         max-width: 140mm;
     }
     #nav {
-        display: none;
+        opacity: 0;
+        white-space: nowrap;
     }
     #coa {
         border-bottom: #00000000 dotted 2rem;
+    }
+    #nav_cont {
+        width: 150rem;
     }
 }
 
@@ -68,10 +72,14 @@ h2 {
         max-width: none;
     }
     #nav {
-        display: block;
+        opacity: 1;
+        white-space: normal;
     }
     #coa {
         border-bottom: white dotted 2rem;
+    }
+    #nav_cont {
+        width: 100%;
     }
 }
 
@@ -83,6 +91,7 @@ h2 {
 a {
     color: #99bbbb;
     text-decoration: none;
+    transition: all 0.25s ease-in-out;
 }
 
 a:hover {
@@ -133,6 +142,7 @@ button {
     font-size: 12rem;
     border-radius: 4rem;
     font-weight: bold;
+    transition: all 0.25s ease-in-out;
 }
 
 li,
@@ -147,25 +157,44 @@ button:hover,
 }
 
 #coa {
+    overflow: hidden;
+    position: relative;
     display: flex;
-    justify-content: center;
+    transition: border-bottom 0.5s ease-in-out;
 }
 
-#coa>img {
-    max-width: 150rem;
+#blazon {
+    width: 150rem;
 }
 
 #nav {
+    overflow: hidden;
+    width: 100%;
+    position: absolute;
+    transition: opacity 0.5s ease-in-out;
+}
+
+#nav_cont {
+    display: flex;
+    justify-content: right;
+    margin: auto;
+    overflow: visible;
+    height: 150rem;
+    position: relative;
+    transition: width 0.5s ease-in-out;
+}
+
+#coa:hover #nav_cont {
     width: 100%;
 }
 
 #coa:hover {
-    justify-content: right;
     border-bottom: white dotted 2rem;
 }
 
-#coa:hover>#nav {
+#coa:hover #nav {
     display: block;
+    opacity: 1;
 }
 
 #dir {
@@ -177,4 +206,28 @@ button:hover,
 ul {
     list-style-type: square;
     list-style-position: outside;
+}
+
+.smaller {
+    text-indent: 16rem;
+    padding: 30rem;
+    font-style: italic;
+}
+
+.smaller>a {
+    opacity: 0;
+    transition-delay: 1s;
+}
+
+.smaller:hover>a {
+    opacity: 1;
+}
+
+#calvino {
+    font-size: 14rem;
+    overflow: visible;
+}
+
+#quote {
+    margin-top: -20rem;
 }
