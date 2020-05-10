@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="icon" href="src/favicon_io/favicon.ico" type="image/ico" sizes="16x16 32x32">
+    <link rel="stylesheet" href="src/main.css">
+    <title>Miscellanea</title>
+    <script>
+        function openTab(tabID, classSEC) {
+            var i;
+            var x = document.getElementsByClassName(classSEC);
+            for (i = 0; i < x.length; i++) {
+                if (x[i].classList.contains('section')) {
+                    if (!x[i].classList.contains('collapsed'))
+                        x[i].classList.add('collapsed');
+                    if (x[i].classList.contains(tabID)) {
+                        if (x[i].classList.contains('collapsed'))
+                            x[i].classList.remove('collapsed');
+                    }
+                } else if (x[i].classList.contains('tab-button')) {
+                    if (x[i].classList.contains('selected'))
+                        x[i].classList.remove('selected');
+                    if (x[i].classList.contains(tabID)) {
+                        if (!x[i].classList.contains('selected'))
+                            x[i].classList.add('selected');
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div id="coa">
+        <div id="nav_cont">
+            <div id="nav">
+                <h2>NAVIGATION</h2>
+                <table>
+                    <tr>
+                        <td>Home Page</td>
+                        <td><a href="./index.html">./index</a></td>
+                    </tr>
+                    <tr>
+                        <td>Curriculum Vitae</td>
+                        <td><a href="./c_vitae.html">./c_vitae</a></td>
+                    </tr>
+                    <tr>
+                        <td><b>Miscellanea</b></td>
+                        <td><a href="./misc.html">./misc</a></td>
+                    </tr>
+                </table>
+            </div>
+            <img id="blazon" src="src/COA-MIN.svg">
+        </div>
+    </div>
+    <div id="divider"></div>
+    <div id="dir">
+        +<a href="#music"> MUSIC</a>
+    </div>
+    <div id="music">
+        <a name="music"></a>
+        <h1>MUSIC</h1>
+        <p>Years ago I attempted to experiment with music and synthesizers. Perhaps I will return to it one day.</p>
+        <p>Some are better than others, and to save you the trouble I took the liberty of highlighting the ones that sound the least like trash.</p>
+        <p><i>Results by Year:</i></p>
+        <div class="buttons">
+            <button class="tab-button y18 music selected" onclick="openTab('y18', 'music')">18</button>
+            <button class="tab-button y17 music" onclick="openTab('y17', 'music')">17</button>
+            <button class="tab-button y16 music" onclick="openTab('y16', 'music')">16</button>
+        </div>
+        <div class="section y18 music">
+            <h2>FROM 2018</h2>
+            <table>
+                <tr>
+                    <td>crusade</td>
+                    <td>
+                        <audio controls src="src/music/2018/crusade.mp3"></audio>
+                    </td>
+                </tr>
+                <tr>
+                    <td>epos</td>
+                    <td>
+                        <audio controls src="src/music/2018/epos.mp3"></audio>
+                    </td>
+                </tr>
+                <tr>
+                    <td><b>shoreline</b></td>
+                    <td>
+                        <audio controls src="src/music/2018/shoreline.mp3"></audio>
+                    </td>
+                </tr>
+                <tr>
+                    <td>the room in white</td>
+                    <td>
+                        <audio controls src="src/music/2018/the room in white.mp3"></audio>
+                    </td>
+                </tr>
+                <tr>
+                    <td><b>naviga</b></td>
+                    <td>
+                        <audio controls src="src/music/2018/naviga.mp3"></audio>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="section y17 music collapsed">
+            <h2>FROM 2017</h2>
+            <table>
+                <tr>
+                    <td><b>bossa from an elevator</b></td>
+                    <td>
+                        <audio controls src="src/music/2017/bossa from an elevator.mp3"></audio>
+                    </td>
+                </tr>
+                <tr>
+                    <td>dance with me</td>
+                    <td>
+                        <audio controls src="src/music/2017/dance with me.mp3"></audio>
+                    </td>
+                </tr>
+                <tr>
+                    <td><b>falling into a mold</b></td>
+                    <td>
+                        <audio controls src="src/music/2017/falling into a mold.mp3"></audio>
+                    </td>
+                </tr>
+                <tr>
+                    <td>lost song</td>
+                    <td>
+                        <audio controls src="src/music/2017/lost song.mp3"></audio>
+                    </td>
+                </tr>
+                <tr>
+                    <td>movement</td>
+                    <td>
+                        <audio controls src="src/music/2017/movement.mp3"></audio>
+                    </td>
+                </tr>
+                <tr>
+                    <td>on the beach of savona</td>
+                    <td>
+                        <audio controls src="src/music/2017/on the beach of savona.mp3"></audio>
+                    </td>
+                </tr>
+                <tr>
+                    <td><b>spinning</b></td>
+                    <td>
+                        <audio controls src="src/music/2017/spinning.mp3"></audio>
+                    </td>
+                </tr>
+                <tr>
+                    <td><b>to return</b></td>
+                    <td>
+                        <audio controls src="src/music/2017/to return.mp3"></audio>
+                    </td>
+                </tr>
+                <tr>
+                    <td><b>unnamed</b></td>
+                    <td>
+                        <audio controls src="src/music/2017/unnamed.mp3"></audio>
+                    </td>
+                </tr>
+                <tr>
+                    <td>upon a time</td>
+                    <td>
+                        <audio controls src="src/music/2017/upon a time.mp3"></audio>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="section y16 music collapsed">
+            <h2>FROM 2016</h2>
+            <table>
+                <tr>
+                    <td><b>by the sea</b></td>
+                    <td>
+                        <audio controls src="src/music/2016/by the sea.mp3"></audio>
+                    </td>
+                </tr>
+                <tr>
+                    <td><b>love in peace</b></td>
+                    <td>
+                        <audio controls src="src/music/2016/love in peace.mp3"></audio>
+                    </td>
+                </tr>
+                <tr>
+                    <td>motif in a note</td>
+                    <td>
+                        <audio controls src="src/music/2016/motif in a note.mp3"></audio>
+                    </td>
+                </tr>
+                <tr>
+                    <td>orchestral sounds</td>
+                    <td>
+                        <audio controls src="src/music/2016/orchestral sounds.mp3"></audio>
+                    </td>
+                </tr>
+                <tr>
+                    <td>pianoless</td>
+                    <td>
+                        <audio controls src="src/music/2016/pianoless.mp3"></audio>
+                    </td>
+                </tr>
+                <tr>
+                    <td>ringtone</td>
+                    <td>
+                        <audio controls src="src/music/2016/ringtone.mp3"></audio>
+                    </td>
+                </tr>
+                <tr>
+                    <td><b>short waves</b></td>
+                    <td>
+                        <audio controls src="src/music/2016/short waves.mp3"></audio>
+                    </td>
+                </tr>
+                <tr>
+                    <td>with happiness</td>
+                    <td>
+                        <audio controls src="src/music/2016/with happiness.mp3"></audio>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -17,9 +17,13 @@
     font-weight: bold;
 }
 
+#divider {
+    height: 150rem;
+}
+
 html {
     background: #121212;
-    color: white;
+    color: #dddddd;
     font-family: "MainMono", monospace;
 }
 
@@ -27,7 +31,7 @@ body {
     margin: auto;
     padding: 15rem;
     padding-bottom: 100rem;
-    font-size: 16rem;
+    font-size: 18rem;
 }
 
 table {
@@ -37,14 +41,16 @@ table {
 table,
 tr,
 td {
-    font-size: 16rem;
+    font-size: 18rem;
 }
 
 h1 {
+    color: #ffffff;
     font-size: 32rem;
 }
 
 h2 {
+    color: #ffffff;
     font-size: 24rem;
 }
 
@@ -61,6 +67,8 @@ h2 {
     }
     #coa {
         border-bottom: #00000000 dotted 2rem;
+        max-width: 140mm;
+        width: calc(100vw - 30rem);
     }
     #nav_cont {
         width: 150rem;
@@ -80,6 +88,8 @@ h2 {
     }
     #coa {
         border-bottom: white dotted 2rem;
+        height: 200rem;
+        width: calc(100vw - 30rem);
     }
     #nav_cont {
         width: 100%;
@@ -88,18 +98,18 @@ h2 {
 
 .IPA {
     font-family: IPAFont, monospace;
-    color: #ffffcc;
+    color: #777777;
 }
 
 a {
     outline: none;
-    color: #99bbbb;
+    color: #ccaa66;
     text-decoration: none;
     transition: all 0.25s ease-in-out;
 }
 
 a:hover {
-    color: #ccffff;
+    color: #ffcc99;
     font-weight: bold;
 }
 
@@ -135,18 +145,20 @@ div {
 
 button {
     outline: none;
-    background: none;
-    border: solid #3f3f3f 1.5rem;
+    border: none;
+    background: #dddddd;
+    margin-top: 0;
     margin-left: 5rem;
-    margin-right: 5rem;
-    color: #3f3f3f;
+    margin-right: 8rem;
+    margin-bottom: 5rem;
+    color: #121212;
     padding: 0;
     height: 22rem;
     width: 22rem;
     font-family: MainMono;
-    font-size: 12rem;
-    border-radius: 4rem;
-    font-weight: 500;
+    font-size: 14rem;
+    box-shadow: 4rem 4rem #121212, 4rem 4rem 0rem 1rem #dddddd;
+    font-weight: bold;
     transition: all 0.25s ease-in-out;
 }
 
@@ -161,26 +173,34 @@ td {
 
 button:hover,
 .selected {
-    border: solid #ff6254 1.5rem;
-    color: #ff6254;
+    margin-left: 9rem;
+    margin-top: 4rem;
+    margin-right: 4rem;
+    box-shadow: 0rem 0rem #121212, 0rem 0rem 0rem 1rem #dddddd;
 }
 
 #coa {
     overflow: hidden;
-    position: relative;
-    display: flex;
-    transition: border-bottom 0.5s ease-in-out;
+    position: absolute;
+    display: block;
+    height: 150rem;
+    background: #121212dd;
+    transition: all 0.5s ease-in-out;
 }
 
 #blazon {
-    width: 150rem;
+    padding: 15rem;
+    width: 110rem;
+    filter: hue-rotate(10deg) saturate(35%) brightness(200%);
+    transition: filter 0.5s ease-in-out;
 }
 
 #nav {
-    overflow: hidden;
+    display: block;
     width: 100%;
     position: absolute;
-    transition: opacity 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    overflow: visible;
 }
 
 #nav_cont {
@@ -190,15 +210,21 @@ button:hover,
     overflow: visible;
     height: 150rem;
     position: relative;
-    transition: width 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+#coa:hover #blazon {
+    filter: hue-rotate(60deg) saturate(50%) brightness(200%);
 }
 
 #coa:hover #nav_cont {
     width: 100%;
+    height: 200rem;
 }
 
 #coa:hover {
     border-bottom: white dotted 2rem;
+    height: 200rem;
 }
 
 #coa:hover #nav {
@@ -209,7 +235,7 @@ button:hover,
 #dir {
     margin-top: 15rem;
     line-height: 18rem;
-    font-size: 12rem;
+    font-size: 14rem;
 }
 
 ul {
@@ -233,10 +259,18 @@ ul {
 }
 
 #calvino {
-    font-size: 14rem;
+    font-size: 16rem;
     overflow: visible;
 }
 
 #quote {
     margin-top: -20rem;
+}
+
+#music b {
+    color: #ffcc99;
+}
+
+audio {
+    border: 2px solid #dddddd;
 }
