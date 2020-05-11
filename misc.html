@@ -4,6 +4,7 @@
 <head>
     <link rel="icon" href="src/favicon_io/favicon.ico" type="image/ico" sizes="16x16 32x32">
     <link rel="stylesheet" href="src/main.css">
+    <script src="https://unpkg.com/wavesurfer.js"></script>
     <title>Miscellanea</title>
     <script>
         function openTab(tabID, classSEC) {
@@ -60,6 +61,10 @@
     <div id="music">
         <a name="music"></a>
         <h1>MUSIC</h1>
+        <div id="waveform"></div>
+        <div id="music-buttons">
+            <button id="play-pause" onclick="waveform.playPause()">play/pause</button>
+        </div>
         <p>Years ago I attempted to experiment with music and synthesizers. Perhaps I will return to it one day.</p>
         <p>Some are better than others, and to save you the trouble I took the liberty of highlighting the ones that sound the least like trash.</p>
         <p><i>Results by Year:</i></p>
@@ -70,158 +75,40 @@
         </div>
         <div class="section y18 music">
             <h2>FROM 2018</h2>
-            <table>
-                <tr>
-                    <td>crusade</td>
-                    <td>
-                        <audio controls src="src/music/2018/crusade.mp3"></audio>
-                    </td>
-                </tr>
-                <tr>
-                    <td>epos</td>
-                    <td>
-                        <audio controls src="src/music/2018/epos.mp3"></audio>
-                    </td>
-                </tr>
-                <tr>
-                    <td><b>shoreline</b></td>
-                    <td>
-                        <audio controls src="src/music/2018/shoreline.mp3"></audio>
-                    </td>
-                </tr>
-                <tr>
-                    <td>the room in white</td>
-                    <td>
-                        <audio controls src="src/music/2018/the room in white.mp3"></audio>
-                    </td>
-                </tr>
-                <tr>
-                    <td><b>naviga</b></td>
-                    <td>
-                        <audio controls src="src/music/2018/naviga.mp3"></audio>
-                    </td>
-                </tr>
-            </table>
+            <button class="record" id="crusade" onclick="loadSong('crusade', '../src/music/2018/crusade.mp3')">crusade</button>
+            <button class="record" id="epos" onclick="loadSong('epos', '../src/music/2018/epos.mp3')">＊ epos</button>
+            <button class="record" id="naviga" onclick="loadSong('naviga', '../src/music/2018/naviga.mp3')">＊ naviga</button>
+            <button class="record" id="shoreline" onclick="loadSong('shoreline', '../src/music/2018/shoreline.mp3')">＊ shoreline</button>
+            <button class="record" id="the-room-in-white" onclick="loadSong('the-room-in-white', '../src/music/2018/the room in white.mp3')">the room in white</button>
         </div>
         <div class="section y17 music collapsed">
             <h2>FROM 2017</h2>
-            <table>
-                <tr>
-                    <td><b>bossa from an elevator</b></td>
-                    <td>
-                        <audio controls src="src/music/2017/bossa from an elevator.mp3"></audio>
-                    </td>
-                </tr>
-                <tr>
-                    <td>dance with me</td>
-                    <td>
-                        <audio controls src="src/music/2017/dance with me.mp3"></audio>
-                    </td>
-                </tr>
-                <tr>
-                    <td><b>falling into a mold</b></td>
-                    <td>
-                        <audio controls src="src/music/2017/falling into a mold.mp3"></audio>
-                    </td>
-                </tr>
-                <tr>
-                    <td>lost song</td>
-                    <td>
-                        <audio controls src="src/music/2017/lost song.mp3"></audio>
-                    </td>
-                </tr>
-                <tr>
-                    <td>movement</td>
-                    <td>
-                        <audio controls src="src/music/2017/movement.mp3"></audio>
-                    </td>
-                </tr>
-                <tr>
-                    <td>on the beach of savona</td>
-                    <td>
-                        <audio controls src="src/music/2017/on the beach of savona.mp3"></audio>
-                    </td>
-                </tr>
-                <tr>
-                    <td><b>spinning</b></td>
-                    <td>
-                        <audio controls src="src/music/2017/spinning.mp3"></audio>
-                    </td>
-                </tr>
-                <tr>
-                    <td><b>to return</b></td>
-                    <td>
-                        <audio controls src="src/music/2017/to return.mp3"></audio>
-                    </td>
-                </tr>
-                <tr>
-                    <td><b>unnamed</b></td>
-                    <td>
-                        <audio controls src="src/music/2017/unnamed.mp3"></audio>
-                    </td>
-                </tr>
-                <tr>
-                    <td>upon a time</td>
-                    <td>
-                        <audio controls src="src/music/2017/upon a time.mp3"></audio>
-                    </td>
-                </tr>
-            </table>
+            <button class="record" id="bossa-from-an-elevator" onclick="loadSong('bossa-from-an-elevator', '../src/music/2017/bossa from an elevator.mp3')">＊ bossa from an elevator</button>
+            <button class="record" id="dance-with-me" onclick="loadSong('dance-with-me', '../src/music/2017/dance with me.mp3')">dance with me</button>
+            <button class="record" id="falling-into-a-mold" onclick="loadSong('falling-into-a-mold', '../src/music/2017/falling into a mold.mp3')">＊ falling into a mold</button>
+            <button class="record" id="final-number" onclick="loadSong('final-number', '../src/music/2017/final number.mp3')">final number</button>
+            <button class="record" id="lost-song" onclick="loadSong('lost-song', '../src/music/2017/lost song.mp3')">lost song</button>
+            <button class="record" id="movement" onclick="loadSong('movement', '../src/music/2017/movement.mp3')">movement</button>
+            <button class="record" id="on-the-beach-of-savona" onclick="loadSong('on-the-beach-of-savona', '../src/music/2017/on the beach of savona.mp3')">on the beach of savona</button>
+            <button class="record" id="spinning" onclick="loadSong('spinning', '../src/music/2017/spinning.mp3')">＊ spinning</button>
+            <button class="record" id="to-return" onclick="loadSong('to-return', '../src/music/2017/to return.mp3')">＊ to return</button>
+            <button class="record" id="unnamed" onclick="loadSong('unnamed', '../src/music/2017/unnamed.mp3')">＊ unnamed</button>
+            <button class="record" id="upon-a-time" onclick="loadSong('upon-a-time', '../src/music/2017/upon a time.mp3')">upon a time</button>
         </div>
         <div class="section y16 music collapsed">
             <h2>FROM 2016</h2>
-            <table>
-                <tr>
-                    <td><b>by the sea</b></td>
-                    <td>
-                        <audio controls src="src/music/2016/by the sea.mp3"></audio>
-                    </td>
-                </tr>
-                <tr>
-                    <td><b>love in peace</b></td>
-                    <td>
-                        <audio controls src="src/music/2016/love in peace.mp3"></audio>
-                    </td>
-                </tr>
-                <tr>
-                    <td>motif in a note</td>
-                    <td>
-                        <audio controls src="src/music/2016/motif in a note.mp3"></audio>
-                    </td>
-                </tr>
-                <tr>
-                    <td>orchestral sounds</td>
-                    <td>
-                        <audio controls src="src/music/2016/orchestral sounds.mp3"></audio>
-                    </td>
-                </tr>
-                <tr>
-                    <td>pianoless</td>
-                    <td>
-                        <audio controls src="src/music/2016/pianoless.mp3"></audio>
-                    </td>
-                </tr>
-                <tr>
-                    <td>ringtone</td>
-                    <td>
-                        <audio controls src="src/music/2016/ringtone.mp3"></audio>
-                    </td>
-                </tr>
-                <tr>
-                    <td><b>short waves</b></td>
-                    <td>
-                        <audio controls src="src/music/2016/short waves.mp3"></audio>
-                    </td>
-                </tr>
-                <tr>
-                    <td>with happiness</td>
-                    <td>
-                        <audio controls src="src/music/2016/with happiness.mp3"></audio>
-                    </td>
-                </tr>
-            </table>
+            <button class="record" id="by-the-sea" onclick="loadSong('by-the-sea', '../src/music/2016/by the sea.mp3')">＊ by the sea</button>
+            <button class="record" id="love-in-peace" onclick="loadSong('love-in-peace', '../src/music/2016/love in peace.mp3')">＊ love in peace</button>
+            <button class="record" id="motif-in-a-note" onclick="loadSong('motif-in-a-note', '../src/music/2016/motif in a note.mp3')">motif in a note</button>
+            <button class="record" id="orchestral-sounds" onclick="loadSong('orchestral-sounds', '../src/music/2016/orchestral sounds.mp3')">orchestral sounds</button>
+            <button class="record" id="pianoless" onclick="loadSong('pianoless', '../src/music/2016/pianoless.mp3')">pianoless</button>
+            <button class="record" id="ringtone" onclick="loadSong('ringtone', '../src/music/2016/ringtone.mp3')">ringtone</button>
+            <button class="record" id="short-waves" onclick="loadSong('short-waves', '../src/music/2016/short waves.mp3')">＊ short waves</button>
+            <button class="record" id="with-happiness" onclick="loadSong('with-happiness', '../src/music/2016/with happiness.mp3')">with happiness</button>
         </div>
     </div>
+
+    <script src="src/music.js"></script>
 </body>
 
 </html>

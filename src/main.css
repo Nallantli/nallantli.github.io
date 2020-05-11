@@ -108,7 +108,7 @@ h2 {
 
 a {
     outline: none;
-    color: #ccaa66;
+    color: #cc9966;
     text-decoration: none;
     transition: all 0.25s ease-in-out;
 }
@@ -144,8 +144,7 @@ div.jp {
     display: none;
 }
 
-button {
-    outline: none;
+.tab-button {
     border: none;
     background: #dddddd;
     margin-top: 0;
@@ -163,6 +162,13 @@ button {
     transition: all 0.25s ease-in-out;
 }
 
+button {
+    outline: none;
+    font-family: MainMono;
+    font-size: 14rem;
+    font-weight: bold;
+}
+
 button::-moz-focus-inner {
     border: 0;
 }
@@ -172,7 +178,7 @@ td {
     padding-bottom: 10rem;
 }
 
-button:hover,
+.tab-button:hover,
 .selected {
     margin-left: 9rem;
     margin-top: 4rem;
@@ -272,4 +278,73 @@ ul {
 
 audio {
     border: 2px solid #dddddd;
+}
+
+#music-buttons {
+    display: flex;
+    justify-content: center;
+}
+
+#play-pause {
+    background-color: #dddddd;
+    border: none;
+    height: 22rem;
+    color: #121212;
+    box-shadow: 0rem 0rem 0rem 4rem #121212, 0rem 0rem 0rem 5rem #dddddd;
+    margin-bottom: 5rem;
+    margin-top: 10rem;
+    transition: all 0.1s ease-in-out;
+}
+
+#play-pause:active {
+    box-shadow: 0rem 0rem 0rem 0rem #121212, 0rem 0rem 0rem 1rem #dddddd;
+}
+
+#waveform {
+    border: 1rem solid #ffffff;
+}
+
+.record {
+    position: relative;
+    background-color: #cc9966;
+    border: none;
+    padding: 5rem;
+    width: 50%;
+    margin: 2rem;
+    height: 26rem;
+    transition: all 0.5s ease-in-out;
+}
+
+.record:hover {
+    background-color: #ffcc99;
+}
+
+.record:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: none;
+    border-top: 14rem solid #121212;
+    border-left: 14rem solid transparent;
+    border-bottom: 14rem solid #121212;
+    width: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.selected-record {
+    background-color: #ffcc99;
+    width: calc(100% - 14rem);
+}
+
+.selected-record:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: none;
+    border-top: 14rem solid #121212;
+    border-right: 14rem solid transparent;
+    border-bottom: 14rem solid #121212;
+    width: 0;
 }
