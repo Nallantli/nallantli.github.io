@@ -1,33 +1,14 @@
-@font-face {
-    font-family: MainMono;
-    font-display: swap;
-    src: url(HackGenConsole-Regular.ttf);
-}
-
-@font-face {
-    font-family: IPAFont;
-    font-display: swap;
-    src: url(fira-sans.regular.ttf);
-}
-
-@font-face {
-    font-family: MainMono;
-    font-display: swap;
-    src: url(HackGenConsole-Bold.ttf);
-    font-weight: bold;
-}
-
 html {
-    background: #121212;
+    background: #111112;
     color: #dddddd;
-    font-family: "MainMono", monospace;
+    font-family: "Encode Sans", "Noto Sans JP", sans-serif;
 }
 
 body {
     margin: auto;
     padding: 15rem;
     padding-bottom: 100rem;
-    font-size: 18rem;
+    font-size: 16rem;
 }
 
 table {
@@ -37,17 +18,19 @@ table {
 table,
 tr,
 td {
-    font-size: 18rem;
+    font-size: 16rem;
 }
 
 h1 {
+    font-weight: 100;
     color: #ffffff;
-    font-size: 32rem;
+    font-size: 28rem;
 }
 
 h2 {
+    font-weight: 100;
     color: #ffffff;
-    font-size: 24rem;
+    font-size: 20rem;
 }
 
 @media (orientation: landscape) {
@@ -102,19 +85,20 @@ h2 {
 }
 
 .IPA {
-    font-family: IPAFont, monospace;
+    font-family: "Fira Code", monospace;
     color: #777777;
+    font-size: 14rem;
 }
 
 a {
     outline: none;
-    color: #cc9966;
+    color: #82d7ff;
     text-decoration: none;
     transition: all 0.25s ease-in-out;
 }
 
 a:hover {
-    color: #ffcc99;
+    color: #82d7ff;
     font-weight: bold;
 }
 
@@ -126,10 +110,6 @@ td {
     display: flex;
     margin-top: -10rem;
     margin-bottom: 10rem;
-}
-
-div.jp {
-    line-height: 24rem;
 }
 
 .section {
@@ -151,21 +131,21 @@ div.jp {
     margin-left: 5rem;
     margin-right: 8rem;
     margin-bottom: 5rem;
-    color: #121212;
+    color: #111112;
     padding: 0;
     height: 22rem;
     width: 22rem;
-    font-family: MainMono;
-    font-size: 14rem;
-    box-shadow: 4rem 4rem #121212, 4rem 4rem 0rem 1rem #dddddd;
+    font-family: "Fira Code", monospace;
+    font-size: 12rem;
+    box-shadow: 4rem 4rem #111112, 4rem 4rem 0rem 1rem #dddddd;
     font-weight: bold;
     transition: all 0.25s ease-in-out;
 }
 
 button {
     outline: none;
-    font-family: MainMono;
-    font-size: 14rem;
+    font-family: "Fira Code", monospace;
+    font-size: 12rem;
     font-weight: bold;
 }
 
@@ -183,21 +163,23 @@ td {
     margin-left: 9rem;
     margin-top: 4rem;
     margin-right: 4rem;
-    box-shadow: 0rem 0rem #121212, 0rem 0rem 0rem 1rem #dddddd;
+    box-shadow: 0rem 0rem #111112, 0rem 0rem 0rem 1rem #dddddd;
 }
 
 #coa {
     overflow: hidden;
     position: absolute;
     display: block;
-    background: #121212dd;
+    background: #111112dd;
     transition: all 0.5s ease-in-out;
 }
 
 #blazon {
+    position: absolute;
+    right: 0;
     padding: 15rem;
     width: 110rem;
-    filter: hue-rotate(10deg) saturate(35%) brightness(200%);
+    filter: hue-rotate(-160deg) saturate(10%) brightness(200%);
     transition: filter 0.5s ease-in-out;
 }
 
@@ -219,7 +201,7 @@ td {
 }
 
 #coa:hover #blazon {
-    filter: hue-rotate(60deg) saturate(50%) brightness(200%);
+    filter: hue-rotate(-160deg) saturate(50%) brightness(200%);
 }
 
 #coa:hover #nav_cont {
@@ -240,7 +222,7 @@ td {
 #dir {
     margin-top: 15rem;
     line-height: 18rem;
-    font-size: 14rem;
+    font-size: 12rem;
 }
 
 ul {
@@ -264,7 +246,7 @@ ul {
 }
 
 #calvino {
-    font-size: 16rem;
+    font-size: 14rem;
     overflow: visible;
 }
 
@@ -273,7 +255,7 @@ ul {
 }
 
 #music b {
-    color: #ffcc99;
+    color: #82d7ff;
 }
 
 audio {
@@ -289,15 +271,15 @@ audio {
     background-color: #dddddd;
     border: none;
     height: 22rem;
-    color: #121212;
-    box-shadow: 0rem 0rem 0rem 4rem #121212, 0rem 0rem 0rem 5rem #dddddd;
+    color: #111112;
+    box-shadow: 0rem 0rem 0rem 4rem #111112, 0rem 0rem 0rem 5rem #dddddd;
     margin-bottom: 5rem;
     margin-top: 10rem;
     transition: all 0.1s ease-in-out;
 }
 
 #play-pause:active {
-    box-shadow: 0rem 0rem 0rem 0rem #121212, 0rem 0rem 0rem 1rem #dddddd;
+    box-shadow: 0rem 0rem 0rem 0rem #111112, 0rem 0rem 0rem 1rem #dddddd;
 }
 
 #waveform {
@@ -306,7 +288,7 @@ audio {
 
 .record {
     position: relative;
-    background-color: #cc9966;
+    background-color: #8295ff;
     border: none;
     padding: 5rem;
     width: 50%;
@@ -316,7 +298,7 @@ audio {
 }
 
 .record:hover {
-    background-color: #ffcc99;
+    background-color: #82d7ff;
 }
 
 .record:before {
@@ -325,15 +307,15 @@ audio {
     top: 0;
     right: 0;
     border: none;
-    border-top: 14rem solid #121212;
+    border-top: 14rem solid #111112;
     border-left: 14rem solid transparent;
-    border-bottom: 14rem solid #121212;
+    border-bottom: 14rem solid #111112;
     width: 0;
     transition: all 0.5s ease-in-out;
 }
 
 .selected-record {
-    background-color: #ffcc99;
+    background-color: #82d7ff;
     width: calc(100% - 14rem);
 }
 
@@ -343,8 +325,8 @@ audio {
     top: 0;
     left: 0;
     border: none;
-    border-top: 14rem solid #121212;
+    border-top: 14rem solid #111112;
     border-right: 14rem solid transparent;
-    border-bottom: 14rem solid #121212;
+    border-bottom: 14rem solid #111112;
     width: 0;
 }
