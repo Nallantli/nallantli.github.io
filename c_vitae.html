@@ -5,8 +5,8 @@
     <title>Curriculum Vitae</title>
     <link rel="icon" href="src/favicon_io/favicon.ico" type="image/ico" sizes="16x16 32x32">
     <link rel="stylesheet" href="src/main.css">
-    <link href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="src/Web/css/ibm-plex.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     <script>
         function openTab(tabID, classSEC) {
             var i;
@@ -57,11 +57,80 @@
     </div>
     <div id="divider"></div>
     <div id="dir">
-        +<a href="#goals"> GOALS・OBIETTIVI・目的</a><br> +
+		+<a href="#goals"> WHO AM I・CHI SONO・私は</a><br> +
+		<a href="#goals"> GOALS・OBIETTIVI・目的</a><br> +
         <a href="#edu"> EDUCATION・ISTRUZIONE・教育</a><br> +
         <a href="#exp"> EXPERIENCE・ESPERIENZA・体験</a><br> +
         <a href="#proj"> PROJECTS・PROGETTI・事業</a><br> +
         <a href="#lang"> LANGUAGES・LINGUE・言語</a>
+    </div>
+    <div>
+        <a name="about"></a>
+        <h1>WHO AM I・CHI SONO・私は</h1>
+        <div class="buttons">
+            <button class="tab-button en about selected" onclick="openTab('en', 'about')">EN</button>
+            <button class="tab-button it about" onclick="openTab('it', 'about')">IT</button>
+            <button class="tab-button jp about" onclick="openTab('jp', 'about')">和</button>
+        </div>
+        <div class="section en about">
+			<div class="picture-cont">
+			<img class="picture-me" src="src/me.png" alt="picture of me">
+			</div>
+				<div class="data-points">
+					<p>
+						22 Years Old - Born on May 22, 1998
+					</p>
+					<p>
+						<b>Interests</b>
+						<ul>
+							<li>Languages and the study of them conceptually</li>
+							<li>Programming with regards to language compilation and interpretation</li>
+							<li>Mathematics, statistics, and applications therein</li>
+							<li>Music and playing the piano</li>
+						</ul>
+					</p>
+				</div>
+			</div>
+        <div class="section it about collapsed">
+			<div class="picture-cont">
+			<img class="picture-me" src="src/me.png" alt="picture of me">
+			</div>
+				<div class="data-points">
+					<p>
+						22 Anni - Nato il 22 Maggio, 1998
+					</p>
+					<p>
+						<b>Interessi</b>
+						<ul>
+							<li>Lingue e lo studio concettuale del linguaggio</li>
+							<li>Programmazione di software con capacità di compilazione ed interpretazione</li>
+							<li>Matematica e statistica e loro applicazioni</li>
+							<li>Musica e suonare il piano</li>
+						</ul>
+					</p>
+				</div>
+			</div>
+        </div>
+        <div class="section jp about collapsed">
+			<div class="picture-cont">
+			<img class="picture-me" src="src/me.png" alt="picture of me">
+			</div>
+				<div class="data-points">
+					<p>
+						22歳、1998年の五月の22日に生まれ
+					</p>
+					<p>
+						<b>興味</b>
+						<ul>
+							<li>外国語と言語の観念的な勉強</li>
+							<li>インタプリタ用やコンパイラー用などのプログラミング言語の使い方</li>
+							<li>数学と統計学の使用</li>
+							<li>音楽でピアノを弾くこと</li>
+						</ul>
+					</p>
+				</div>
+			</div>
+        </div>
     </div>
     <div>
         <a name="goals"></a>
@@ -81,12 +150,12 @@
             </p>
         </div>
         <div class="section it goals collapsed">
-            <p>
-                Il mio obiettivo a lungo termine è diventare professore di Linguistica ed eventualmente cattedratico. Nel fratempo, sto cercando per acquisire il modo da potere vivere all'estero per uno anno tra i miei studi prima d'iniziare e studi dottorali.
-            </p>
-            <p>
-                Durante questo periodo intermediario vorrei usare la mia abilità ed esperienza nel campo di programmazione per assicurare una posizione d'impiego nel campo d'Informazione Tecnologica.
-            </p>
+			<p>
+				Il mio obiettivo a lungo termine è diventare professore di Linguistica ed eventualmente cattedratico. Nel frattempo, sto cercando di acquisire il modo per potere vivere all'estero per un anno dopo la laurea e prima di iniziare il dottorato.
+			</p>
+			<p>
+				Durante questo periodo vorrei usare la mia abilità ed esperienza nel campo della programmazione lavorando nel campo dell'Informatica.
+			</p>
         </div>
         <div class="section jp goals collapsed">
             <p>
@@ -115,10 +184,10 @@
         </div>
         <div class="section it edu collapsed">
             <p>
-                Ho finito la mia laurea in Linguistica dall'Università di Florida a 2020 Agosto.
+                Mi sono laureato in Linguistica all'Università della Florida (UF) ad agosto 2020.
             </p>
             <p>
-                Sono diplomata del Programma di Baccellierato Internazionale dal Liceo-Università di Palm Harbor. Il tema della mia Tesi era su Matematica e particolarmente sulla valutazione dell'Integrazione Monte Carlo.
+                Mi sono diplomato con il Programma International Baccalaureate (IB) presso il liceo "Palm Harbor University High School". Il tema della mia Tesi è stato in Matematica, con particolare attenzione sull' "Integrazione Monte Carlo".
             </p>
         </div>
         <div class="section jp edu collapsed">
@@ -180,34 +249,34 @@
                 Liceo (2012-2016)
                 <ul>
                     <li>
-                        Istruttore di matematica per la corporazione Mathnasium (1.5 Anni)
+                        Tutor di matematica per il gruppo Mathnasium (1.5 Anni)
                     </li>
                     <li>
                         Vicepresidente e Presidente della Società di Programmazione (2 Anni)
                     </li>
                     <li>
-                        Primo Ingegnere per la Squadra di Robotica (2 Anni)
+                        Capogruppo della Squadra di Robotica (2 Anni)
                     </li>
                 </ul>
                 Università (2016-2020)
                 <ul>
                     <li>
-                        Istruttore d'inglese per l'Organizzazione di Lingue Straniere a UF (1 Anno)
+                        Istruttore d'inglese per l'Organizzazione di Lingue Straniere della UF (1 Anno)
                     </li>
                     <li>
-                        Corrispondente Tecnologico per il Centro 1455 dell'Arte Letteraria (Attuale)
+                        Corrispondente Tecnologico per il "Centro 1455" dell'Arte Letteraria (in corso)
                     </li>
                     <li>
-                        Istrutore di Letturatura Inglese e di Matematica per Tutor.org (2 Anni)
+                        Istruttore di Letteratura Inglese e di Matematica per Tutor.org (2 Anni)
                     </li>
                     <li>
-                        Socio della Squadra Competitiva di Programmatori a UF (1 Anno)
+                        Socio del team per le competizioni tra Programmatori per la UF (1 Anno)
                     </li>
                     <li>
-                        Socio del Club di Programmazione d'IA a UF (1 Anno)
+                        Socio del Club di Programmazione per l'Intelligenza Artificiale alla UF (1 Anno)
                     </li>
                     <li>
-                        Relatore e Vicepresidente della Società Linguistica a UF (3 Anni)
+                        Relatore e Vicepresidente della Società di Linguistica alla UF (3 Anni)
                     </li>
                 </ul>
             </p>
@@ -261,6 +330,17 @@
         <div class="section en proj">
             <p>
                 <table>
+                    <tr>
+                        <td>
+                            <a target="_blank" href="https://github.com/Nallantli/Sono">Sono</a>
+                        </td>
+                        <td>
+                            High-Level Interpreted Programming Language for linguistic analysis and general use
+                        </td>
+                        <td>
+                            Java, JS
+                        </td>
+                    </tr>
                     <tr>
                         <td>
                             <a target="_blank" href="https://github.com/Ruota-Lang/Ruota">Ruota</a>
@@ -369,6 +449,17 @@
                 <table>
                     <tr>
                         <td>
+                            <a target="_blank" href="https://github.com/Nallantli/Sono">Sono</a>
+                        </td>
+                        <td>
+                            Linguaggio Interpretativo di Programmazione ad Alto Livello per analisi linguistica e l’uso generale.
+                        </td>
+                        <td>
+                            Java, JS
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
                             <a target="_blank" href="https://github.com/Ruota-Lang/Ruota">Ruota</a>
                         </td>
                         <td>
@@ -383,7 +474,7 @@
                             <a target="_blank" href="https://github.com/Nallantli/US-Route-Mapping">Mappagio di Strade SU</a>
                         </td>
                         <td>
-                            Se usa dati di strade per trovare cammini tra città
+                            Utilizzo di dati – strade per trovare i percorsi tra città
                         </td>
                         <td>
                             JS, Java
@@ -427,7 +518,7 @@
                             <a target="_blank" href="https://github.com/Nallantli/NodeSimulation">Simulazione di Nodi</a>
                         </td>
                         <td>
-                            Algoritmo A* con Nodi Generati Fortuitamente
+                            Algoritmo A* con Nodi Generati casualmente
                         </td>
                         <td>
                             Java
@@ -438,7 +529,7 @@
                             <a target="_blank" href="https://github.com/Nallantli/JSyntaxTree">JSyntaxTree</a>
                         </td>
                         <td>
-                            Generatore di Alberi Sintatici
+                            Generatore di Schemi Sintatici (Linguistichi)
                         </td>
                         <td>
                             Java
@@ -449,7 +540,7 @@
                             <a target="_blank" href="https://github.com/Nallantli/Pitch-Accent-Helper">Aiutante d'Accento Tonale</a>
                         </td>
                         <td>
-                            Demo che Esplora Accento Tonale in Giapponese
+                            Demo che esplora Accento Tonale in giapponese
                         </td>
                         <td>
                             JS
@@ -461,7 +552,7 @@
 							Neurale</a>
                         </td>
                         <td>
-                            Implementazione Semplice d'una Rete Neurale
+                            Implementazione Semplice di Rete Neurale
                         </td>
                         <td>
                             C++
@@ -473,6 +564,17 @@
         <div class="section jp proj collapsed">
             <p>
                 <table>
+                    <tr>
+                        <td>
+                            <a target="_blank" href="https://github.com/Nallantli/Sono">ソーノ</a>
+                        </td>
+                        <td>
+							言語学の解析や一般的な仕方のために出来たインタプリタ用の高水準言語
+                        </td>
+                        <td>
+                            Java, JS
+                        </td>
+                    </tr>
                     <tr>
                         <td>
                             <a target="_blank" href="https://github.com/Ruota-Lang/Ruota">ルオタ</a>
@@ -689,7 +791,7 @@
                             [<span class="IPA">es.paˈɲɔl</span>]
                         </td>
                         <td>
-                            Posso conversare, ma più semplice leggere che parlare
+                            Posso conversare, ma per me è più semplice leggere che parlare
                         </td>
                     </tr>
                     <tr>
@@ -700,7 +802,7 @@
                             [<span class="IPA">laˈti.na</span>]
                         </td>
                         <td>
-                            Avanzato ma non Proficente
+                            Avanzato ma non ad alto livello
                         </td>
                     </tr>
                 </table>

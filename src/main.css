@@ -1,7 +1,7 @@
 html {
     background: #111112;
-    color: #dddddd;
-    font-family: "Encode Sans", "Noto Sans JP", sans-serif;
+	color: #dddddd;
+	font-family: 'IBM Plex Sans', 'Noto Sans JP', Arial, sans-serif;
 }
 
 body {
@@ -22,13 +22,13 @@ td {
 }
 
 h1 {
-    font-weight: 100;
+    font-weight: 800;
     color: #ffffff;
     font-size: 28rem;
 }
 
 h2 {
-    font-weight: 100;
+    font-weight: 800;
     color: #ffffff;
     font-size: 20rem;
 }
@@ -172,6 +172,25 @@ td {
     display: block;
     background: #111112dd;
     transition: all 0.5s ease-in-out;
+}
+
+.picture-cont {
+	float: left;
+	max-width: 200rem;
+	padding-top: 50rem;
+}
+
+.picture-me {
+	max-width: 200rem;
+	width: 100%;
+	border-radius: 100%;
+}
+
+.data-points {
+	padding: 15rem;
+	display: block;
+	float: left;
+	width: calc(100% - 230rem);
 }
 
 #blazon {
