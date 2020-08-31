@@ -1,0 +1,92 @@
+html {
+	background: none;
+	font-family: 'IBM Plex Serif', serif;
+}
+
+body {
+	color: #000000;
+	padding: 0;
+	margin: 0;
+	font-size: 12pt;
+	width: 100%;
+}
+
+table {
+	overflow: auto;
+	border-collapse: collapse;
+	width: 100%;
+	margin-bottom: 10pt;
+}
+
+table,
+tr,
+td {
+    font-size: 12pt;
+}
+
+h1 {
+	font-weight: bold;
+    font-size: 16pt;
+}
+
+h2 {
+	font-weight: bold;
+	font-size: 20pt;
+}
+
+#cvbanner {
+	text-align: center;
+}
+
+.IPA {
+    font-family: monospace;
+    color: #777777;
+    font-size: 12pt;
+}
+
+a {
+    outline: none;
+	color: black;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+td {
+	border: #dddddd solid 0.5pt;
+	padding: 5pt;
+}
+
+.section {
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+    display: block;
+}
+
+li,
+td {
+	padding-bottom: 5pt;
+}
+
+.picture-cont {
+	float: left;
+	width: 2in;
+	padding-top: 5pt;
+}
+
+.picture-me {
+	width: 2in;
+	border-radius: 100%;
+}
+
+.data-points {
+	padding: 5pt;
+	display: block;
+	float: left;
+	width: calc(100% - 2in - 10pt);
+}
+
+ul {
+    list-style-type: square;
+    list-style-position: outside;
+}
