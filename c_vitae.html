@@ -2,6 +2,7 @@
 <html>
 
 <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Curriculum Vitae</title>
 	<link rel="icon" href="src/favicon_io/favicon.ico" type="image/ico" sizes="16x16 32x32">
 	<link rel="stylesheet" href="src/main.css">
@@ -35,23 +36,25 @@
 </head>
 
 <body>
-    <div id="coa">
-        <img id="blazon" src="src/COA-MIN2.svg">
-        <div id="nameheader">Benjamin Park</div>
-        <ul id="navigation">
-            <li><a href="./index.html">HOME</a></li>
-            <li><a href="./c_vitae.html">CURRICULUM VITAE</a></li>
-            <li><a href="./misc.html">MISCELLANEA</a></li>
-        </ul>
-    </div>
-	<div id="cv-body"></div>
-    <script src="src/cvdata.js"></script>
-	<script src="src/cv.js"></script>
-	<div>
-		<h1>DOWNLOAD・SCARICA・ダウンロード</h1>
-		<button onclick="download('en')" style="width:100%">Download English Version</button><br>
-		<button onclick="download('it')" style="width:100%">Scarica Versione Italiana</button><br>
-		<button onclick="download('jp')" style="width:100%">日本語種類をダウンロードする</button><br>
+	<div id="coa">
+		<img id="blazon" src="src/COA-MIN2.svg">
+		<div id="nameheader">Benjamin Park</div>
+		<ul id="navigation">
+			<li><a href="./index.html">HOME</a></li>
+			<li><a href="./c_vitae.html">CURRICULUM VITAE</a></li>
+			<li><a href="./misc.html">MISCELLANEA</a></li>
+		</ul>
+	</div>
+	<div id="main">
+		<div id="cv-body"></div>
+		<script src="src/cvdata.js"></script>
+		<script src="src/cv.js"></script>
+		<div>
+			<h1>DOWNLOAD・SCARICA・ダウンロード</h1>
+			<button onclick="download('en')" style="width:100%">Download English Version</button><br>
+			<button onclick="download('it')" style="width:100%">Scarica Versione Italiana</button><br>
+			<button onclick="download('jp')" style="width:100%">日本語種類をダウンロードする</button><br>
+		</div>
 	</div>
 </body>
 

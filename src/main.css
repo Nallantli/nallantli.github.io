@@ -18,10 +18,9 @@ html {
 }
 
 body {
-    margin        : auto;
-    padding       : 15rem;
-    padding-bottom: 100rem;
-    font-size     : 16rem;
+    margin   : auto;
+    padding  : 15rem;
+    font-size: 16rem;
 }
 
 table {
@@ -36,41 +35,30 @@ td {
 
 h1 {
     font-weight: 800;
-    color      : #ffffff;
+    color      : #ddd;
     font-size  : 28rem;
 }
 
 h2 {
-    font-weight: 800;
+    font-weight: bold;
     color      : #ffffff;
     font-size  : 20rem;
 }
 
 html {
-    font-size: 0.25mm;
+    font-size: 1px;
 }
 
 body {
-    max-width: 140mm;
-}
-
-#nav {
-    opacity    : 0;
-    white-space: nowrap;
+    max-width: 600rem;
+    margin   : auto;
+    padding  : 0;
+    width    : 100%;
+    margin-top: 15rem;
 }
 
 #coa {
-    max-width: 140mm;
-    width    : calc(100vw - 30rem);
-}
-
-#nav_cont {
-    width : 150rem;
-    height: 150rem;
-}
-
-#divider {
-    height: 150rem;
+    display: block;
 }
 
 .IPA {
@@ -86,6 +74,7 @@ body {
     margin-top: 45px;
     font-size : 32px;
     color     : #111112;
+    font-weight:normal;
 }
 
 a {
@@ -225,13 +214,11 @@ td {
 #navigation>li {
     display         : block;
     float           : left;
-    height          : 40rem;
+    height          : 30rem;
     padding         : 0;
     margin          : 0;
-    margin-left     : -1rem;
+    margin-right    : 1px;
     background-color: #dddddd;
-    border          : solid 1rem #111112;
-    border-top      : none;
     color           : #111112;
 }
 
@@ -240,8 +227,9 @@ td {
     color           : #ddd;
 }
 
-code{
+code {
     color: #777;
+    overflow: auto;
 }
 
 #navigation>li>a {
@@ -370,4 +358,16 @@ audio {
     border-right : 14rem solid transparent;
     border-bottom: 14rem solid #111112;
     width        : 0;
+}
+
+.index-section {
+    margin-top   : 50rem;
+    margin-bottom: 50rem;
+    display      : block;
+}
+
+#main {
+    margin: 15rem;
+    padding: 0;
+    display: block;
 }
