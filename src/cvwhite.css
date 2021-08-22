@@ -1,37 +1,24 @@
 html {
-	background: none;
-	font-family: 'IBM Plex Serif', serif;
+	background : none;
+	font-family: 'IBM Plex Sans', serif;
 }
 
 body {
-	color: #000000;
-	padding: 0;
-	margin: 0;
-	font-size: 12pt;
-	width: 100%;
+	color    : #000000;
+	padding  : 0;
+	margin   : 0;
+	font-size: 10pt;
+	width    : 100%;
 }
 
 table {
-	overflow: auto;
+	overflow       : auto;
 	border-collapse: collapse;
-	width: 100%;
-	margin-bottom: 10pt;
+	width          : 100%;
 }
 
-table,
-tr,
-td {
-    font-size: 12pt;
-}
-
-h1 {
-	font-weight: bold;
-    font-size: 16pt;
-}
-
-h2 {
-	font-weight: bold;
-	font-size: 20pt;
+table tr td {
+	font-size: 10pt;
 }
 
 #cvbanner {
@@ -39,54 +26,101 @@ h2 {
 }
 
 .IPA {
-    font-family: monospace;
-    color: #777777;
-    font-size: 12pt;
+	font-family: monospace;
+	color      : #777777;
+	font-size  : 10pt;
 }
 
 a {
-    outline: none;
-	color: black;
-	font-weight: bold;
+	outline        : none;
+	color          : black;
+	font-weight    : bold;
 	text-decoration: none;
 }
 
 td {
 	border: #dddddd solid 0.5pt;
-	padding: 5pt;
 }
 
 .section {
-    margin: 0;
-    padding: 0;
-    overflow: auto;
-    display: block;
-}
-
-li,
-td {
-	padding-bottom: 5pt;
+	margin  : 0;
+	padding : 15px;
+	overflow: auto;
+	display : block;
 }
 
 .picture-cont {
-	float: left;
-	width: 2in;
+	float      : left;
+	width      : 2in;
 	padding-top: 5pt;
 }
 
 .picture-me {
 	width: 2in;
-	border-radius: 100%;
-}
-
-.data-points {
-	padding: 5pt;
-	display: block;
-	float: left;
-	width: calc(100% - 2in - 10pt);
 }
 
 ul {
-    list-style-type: square;
-    list-style-position: outside;
+	list-style-type    : square;
+	list-style-position: outside;
+}
+
+.cvtable,
+.cvtable tr,
+.cvtable td {
+	padding       : 0;
+	margin        : 0;
+	vertical-align: top;
+}
+
+.cv-table-title {
+	font-weight : bold;
+	padding     : 15px;
+	border-right: #000000 solid 1px;
+	text-align  : right;
+	font-size   : 12pt;
+}
+
+.banner,
+.banner-notes tr td {
+	text-align: center;
+	border    : none;
+}
+
+.banner {
+	padding-bottom: 10px;
+	margin-bottom : 30px;
+	border-bottom : #000000 dashed 2px;
+}
+
+.banner-notes {
+	display     : inline;
+	margin-left : auto;
+	margin-right: auto;
+}
+
+.banner-notes tr td {
+	padding  : 5px;
+	font-size: 10pt;
+}
+
+.banner-name {
+	font-size: 24pt;
+}
+
+.cvtable tr td {
+	border: none;
+}
+
+p {
+	margin       : 0;
+	margin-bottom: 10px;
+}
+
+.banner-address {
+	font-style: italic;
+}
+
+.inner-table tr td {
+	padding: 5px;
+	border : 1px dashed #dddddd;
 }
