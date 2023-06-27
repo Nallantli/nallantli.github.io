@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="icon" href="src/favicon_io/favicon.ico" type="image/ico" sizes="16x16 32x32">
 	<link rel="stylesheet" href="src/main.css">
-	<link rel="stylesheet" href="src/Web/css/ibm-plex.min.css">
+	<link rel="stylesheet" href="src/Web/css /ibm-plex.min.css">
 	<link
 		href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap"
 		rel="stylesheet">
@@ -18,16 +18,45 @@
 		<div id="nameheader">Benjamin Park</div>
 		<ul id="navigation">
 			<li><a href="./index.html">HOME</a></li>
-			<li><a href="./c_vitae.html">CURRICULUM VITAE</a></li>
+			<li><a href="./resume.html">RÉSUMÉ</a></li>
 			<li><a href="./misc.html">MISCELLANEA</a></li>
 		</ul>
 	</div>
 	<div id="main">
+        <div id="dir">
+			<p>START</p>
+            +<a href="#intro"> INTRO</a><br>
+            +<a href="#contact"> CONTACT</a><br>
+			<p>PROJECTS</p>
+            +<a href="#rossa"> ROSSA</a><br>
+            +<a href="#amoeba"> AMŐBA</a><br>
+            +<a href="#glfw"> GLFW-GLHF</a><br>
+        </div>
 		<div id="intro" class="index-section">
 			<h1>~</h1>
 			<p>
 				Linguistics major working as a programmer
 			</p>
+		</div>
+		<div id="contact" class="index-section">
+			<h1>CONTACT</h1>
+			<table>
+				<tr>
+					<td>Github</td>
+					<td><a target="_blank" rel="noopener noreferrer"
+							href="https://github.com/Nallantli">github.com/Nallantli</a></td>
+				</tr>
+				<tr>
+					<td>Email</td>
+					<td><a target="_blank" rel="noopener noreferrer"
+							href="mailto:parkbenjamin2@gmail.com">parkbenjamin2@gmail.com</a></td>
+				</tr>
+				<tr>
+					<td>Discord</td>
+					<td><a target="_blank" rel="noopener noreferrer" href="https://discordapp.com">nallantli</a>
+					</td>
+				</tr>
+			</table>
 		</div>
 		<div id="rossa" class="index-section">
 			<h1>ROSSA</h1>
@@ -51,36 +80,21 @@ alloc(11)
 	.map(putln);
 		</code>
 		</div>
-		<div id="contact" class="index-section">
-			<h1>CONTACT</h1>
-			<table>
-				<tr>
-					<td>Github</td>
-					<td><a target="_blank" rel="noopener noreferrer"
-							href="https://github.com/Nallantli">github.com/Nallantli</a></td>
-				</tr>
-				<tr>
-					<td>Facebook</td>
-					<td><a target="_blank" rel="noopener noreferrer"
-							href="https://www.facebook.com/benjamin.robert.park">facebook.com/benjamin.robert.park</a>
-					</td>
-				</tr>
-				<tr>
-					<td>Email</td>
-					<td><a target="_blank" rel="noopener noreferrer"
-							href="mailto:parkbenjamin2@gmail.com">parkbenjamin2@gmail.com</a></td>
-				</tr>
-				<tr>
-					<td>Matrix</td>
-					<td><a target="_blank" rel="noopener noreferrer"
-							href="https://matrix.to/#/@nallantli:matrix.org">@nallantli:matrix.org</a></td>
-				</tr>
-				<tr>
-					<td>Discord</td>
-					<td><a target="_blank" rel="noopener noreferrer" href="https://discordapp.com">Nallantli#3785</a>
-					</td>
-				</tr>
-			</table>
+		<div id="amoeba" class="index-section">
+			<h1>Amőba</h1>
+			<p><a href="https://github.com/Nallantli/amoeba">https://github.com/Nallantli/amoeba</a></p>
+			<p>
+				The classic game I played in high school on graph paper. May not reflect your high school experience.
+			</p>
+			<img src="src/amoeba.png" style="width: 100%;">
+		</div>
+		<div id="glfw" class="index-section">
+			<h1>glfw-glhf</h1>
+			<p><a href="https://github.com/Nallantli/glfw-glhf">https://github.com/Nallantli/glfw-glhf</a></p>
+			<p>
+				I blame Minecraft for my interest in terrain generation.
+			</p>
+			<img src="src/glfw.png" style="width: 100%;">
 		</div>
 	</div>
 </body>
